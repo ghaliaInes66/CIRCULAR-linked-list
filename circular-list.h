@@ -80,11 +80,11 @@ void display_nodes(node**s,node**e){
   }
   else{
  node *p=*s;
- while(p!=*e){
+ do{
   printf("%i ",p->data);
   p=p->next;
  }
- printf("%i ",p->data);
+ while(p!=*s);
   }
 }
 
