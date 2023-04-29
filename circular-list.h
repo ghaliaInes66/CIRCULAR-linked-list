@@ -92,12 +92,13 @@ int length(node**s,node**e){
   if(*s==NULL){
     return 0;
   }
-  int count=1;
+  int count=0;
   node *p=*s;
- while(p!=*e){
+do{
   count++;
   p=p->next;
  }
+ while(p!=*s);
  return count;
 }
 
